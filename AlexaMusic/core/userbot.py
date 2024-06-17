@@ -64,12 +64,6 @@ class Userbot(Client):
         LOGGER(__name__).info(f"Starting Assistant Clients...")
         if config.STRING1:
             await self.one.start()
-            try:
-                await self.one.join_chat("Alexa_Help")
-                await self.one.join_chat("TheTeamAlexa")
-                await self.one.join_chat("Alexa_BotUpdates")
-            except:
-                pass
             assistants.append(1)
             try:
                 await self.one.send_message(
@@ -92,12 +86,6 @@ class Userbot(Client):
             LOGGER(__name__).info(f"Assistant Started as {self.one.name}")
         if config.STRING2:
             await self.two.start()
-            try:
-                await self.two.join_chat("Alexa_Help")
-                await self.two.join_chat("TheTeamAlexa")
-                await self.two.join_chat("Alexa_BotUpdates")
-            except:
-                pass
             assistants.append(2)
             try:
                 await self.two.send_message(
@@ -120,12 +108,6 @@ class Userbot(Client):
             LOGGER(__name__).info(f"Assistant Two Started as {self.two.name}")
         if config.STRING3:
             await self.three.start()
-            try:
-                await self.three.join_chat("Alexa_Help")
-                await self.three.join_chat("TheTeamAlexa")
-                await self.three.join_chat("Alexa_BotUpdates")
-            except:
-                pass
             assistants.append(3)
             try:
                 await self.three.send_message(
@@ -148,12 +130,6 @@ class Userbot(Client):
             LOGGER(__name__).info(f"Assistant Three Started as {self.three.name}")
         if config.STRING4:
             await self.four.start()
-            try:
-                await self.four.join_chat("Alexa_Help")
-                await self.four.join_chat("TheTeamAlexa")
-                await self.four.join_chat("Alexa_BotUpdates")
-            except:
-                pass
             assistants.append(4)
             try:
                 await self.four.send_message(
@@ -176,12 +152,6 @@ class Userbot(Client):
             LOGGER(__name__).info(f"Assistant Four Started as {self.four.name}")
         if config.STRING5:
             await self.five.start()
-            try:
-                await self.five.join_chat("Alexa_Help")
-                await self.five.join_chat("TheTeamAlexa")
-                await self.five.join_chat("Alexa_BotUpdates")
-            except:
-                pass
             assistants.append(5)
             try:
                 await self.five.send_message(
